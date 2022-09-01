@@ -25,6 +25,6 @@ process COWSAY {
 
     script:
     """
-    cowsay $y 
+    cowsay $y.text 
     """
 }

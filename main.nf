@@ -21,10 +21,10 @@ process COWSAY {
     val y from letters_ch.flatten()
 
     output:
-    file 'cow_*'
+    stdout
 
     script:
     """
-    cowsay $y.text
+    cowsay $y 
     """
 }

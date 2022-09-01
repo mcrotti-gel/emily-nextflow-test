@@ -21,7 +21,7 @@ process COWSAY {
     val y from letters_ch.flatten()
 
     output:
-    stdout
+    stdout ch
 
     script:
     """
